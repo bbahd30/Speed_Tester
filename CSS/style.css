@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,400;1,800&display=swap');
+
+:root
+{
+    --purple: #cc96eb;
+    --blackishNav: #333;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;;
+}
+
+*::selection
+{
+    background: var(--purple);
+    color: #fff;
+}
+.hover
+{
+    color:var(--purple);
+}
+
+header
+{
+    top:0; left: 0; right:0;
+    background: var(--blackishNav);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9%;
+}
+header .logo
+{
+    font-size:  30px;
+    font-weight:  bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span
+{
+    color: var(--purple);
+}
+
+header .navBar a
+{
+    color: #fff; 
+    font-size: 20px; 
+    margin:0 20px;
+}
+
+header .navBar a:hover
+{
+    color: var(--purple);
+}
+
+.btn
+{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: var(--purple);
+    border: 3px solid var(--purple);
+    border-radius: 20px;
+    cursor: pointer;
+    background: none;
+}
+.btn:hover
+{
+    background-color: #cc96eb;
+    color: white;
+}
+#area
+{
+    background-color: #000;
+    position: relative;
+    display: block;
+    text-align: center;
+    color:var(--purple);
+    font-size: 45px;
+    font-weight:900;
+    margin: 70px 0 0 0;
+}
+#area span
+{
+    font-size: 41px;
+    font-family: cursive;
+    color: white;
+}
+
+#start
+{
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-top: 200px;
+}
+body
+{
+    background: url('../IMAGES/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
